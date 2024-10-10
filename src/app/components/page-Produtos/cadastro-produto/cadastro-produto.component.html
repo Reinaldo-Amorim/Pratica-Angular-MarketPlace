@@ -1,0 +1,43 @@
+<div class="container_conteudo">
+  <app-titulo-subtitulo [nomeLoja]="'Sua Loja'"></app-titulo-subtitulo>
+
+  <div class="container_cadastrar_produto">
+    <form class="form_cadastro_produto"
+      [formGroup]="myForm"
+     onSubmit={handleSubmit(cadastrarProduto)}>
+
+      <input formControlName="nomeProduto" class="input_geral_logado" type="text" placeholder="Nome do produto" />
+
+      <div class="input_preco_estoque">
+        <div class={styles.prefix_position}>
+          <input formControlName="preco" class="input_cadastro_preco_estoque" type="number" placeholder="Preço" />
+          <span class="prefix_preco">R$</span>
+
+        </div>
+        <div>
+          <input formControlName="estoque" class="input_cadastro_preco_estoque" type="number" placeholder="Estoque" />
+          <span class="prefix_estoque">Un</span>
+        </div>
+
+      </div>
+      <input formControlName="descricao" type="text" class="input_geral_logado" placeholder="Descrição do produto" />
+
+      <input formControlName="imagem_link" type="text" class="input_geral_logado" placeholder="Imagem" />
+
+    </form>
+    <div class="img_produto"></div>
+  </div>
+  <div class="container_btn_produtos">
+
+
+    <a class="link_cancelar" (click)="linkCancelar()">
+      CANCELAR
+    </a>
+
+
+
+    <button (submit)="cadastrarProduto()" class="btn_confirmar">
+      Adicionar Produto
+    </button>
+  </div>
+</div>

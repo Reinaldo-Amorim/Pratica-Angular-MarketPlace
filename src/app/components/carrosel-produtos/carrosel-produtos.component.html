@@ -1,0 +1,53 @@
+
+<div className={styles.container_carroselProdutos}>
+    <div className={styles.container_direcionais}>
+      <div
+        (click)="paginaAnterior()"       
+        class="seta_esquerda"
+        [ngStyle]="{
+            'pointer-events': paginaAtual === 0 ? 'none' : 'auto', 'opacity': paginaAtual === 0 ? '0.5' : '1'
+        }"
+        
+        
+      ></div>
+      <h1>Carrosel</h1>
+      <!-- <div className={styles.produto}>
+        {produtoAtual.map((item) => (
+          <div className={styles.container_protudos} key={item.id}>
+            <div
+              className={styles.imgProduto}
+              style={{ backgroundImage: `url(${item.imagem})` }}
+            >
+              <button
+                className={styles.btnExcluir}
+                onClick={() => excluirProduto(item.id)}
+              ></button>
+            </div>
+            <NavLink
+              style={{ color: "black" }}
+              to={`/produtos/${item.id}/editar`}
+            >
+              <div className={styles.conteudoProduto}>
+                <h2 className={styles.nomeProduto}>{item.nome}</h2>
+                <p className={styles.descricaoProduto}>{item.descricao}</p>
+                <div className={styles.infoProduto}>
+                  <p className={styles.produtoQtd}>
+                    {item.estoque} UNIDADES
+                  </p>
+                  <p className={styles.produtoValor}>
+                    {formatoPreco(item.preco)}
+                  </p>
+                </div>
+              </div>
+            </NavLink>
+          </div>
+        ))}
+      </div>
+      <div
+        onClick={proximaPagina}
+        className={`${styles.seta_direita} ${
+          paginaAtual === totalPaginas - 1 ? styles.disabled : ""
+        }`}
+      ></div>
+    </div>
+  </div> -->

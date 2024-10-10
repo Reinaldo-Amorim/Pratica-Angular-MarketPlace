@@ -1,0 +1,25 @@
+<div class="body">
+    <div class="container_cadastro">
+        <h1 class="h1">Criar uma conta</h1>
+        <form class="form_geral" onSubmit={handleSubmit(cadastrarUsuario)}>
+
+            <input type="text" class="input_geral" placeholder="Seu nome" />
+
+            <input type="text" class="input_geral" placeholder="Nome da loja" />
+
+            <input type="text" class="input_geral" placeholder="E-mail" />
+
+            <input type="password" class="input_geral" placeholder="Senha" />
+
+            <input type="password" class="input_geral" placeholder="Repita a senha" />
+
+            <button class="btn_cadastro">CRIAR CONTA</button>
+        </form>
+        <p>
+            Já possui uma conta?
+            <a (click)="direcionar()" class="link_cadastro">
+                ACESSE
+            </a>
+        </p>
+    </div>
+</div>

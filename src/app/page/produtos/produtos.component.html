@@ -1,0 +1,8 @@
+<div class="container_siteMarketPlace">
+
+    <app-nav-bar-lateral ></app-nav-bar-lateral>
+
+    <app-cadastro-produto *ngIf="cadastroProduto" (cadastroProdutoTroca)="trocarParaCarrosel()"></app-cadastro-produto>
+
+    <app-carrosel-produtos *ngIf="carroselProdutos"></app-carrosel-produtos>
+</div>

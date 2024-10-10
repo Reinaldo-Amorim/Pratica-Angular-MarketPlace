@@ -1,0 +1,30 @@
+<div class="body">
+    <div class="container_login">
+      <h1 class="h1">Login</h1>
+
+      <form
+        class="form_geral"
+        onSubmit={handleSubmit(logar)}
+      >
+        <input
+          class="input_geral"
+          type="email"
+          placeholder="E-mail"
+        />
+
+        <input
+          class="input_geral"
+          type="password"
+          placeholder="Senha"
+        />
+
+        <button class="btn_entrar">Entrar</button>
+      </form>
+      <p>
+        Primeira vez aqui?
+        <a (click)="direcionar()" class="link_cadastro">
+          CRIE UMA CONTA
+        </a>
+      </p>
+    </div>
+  </div>

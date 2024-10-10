@@ -1,0 +1,26 @@
+.link_sair {
+    margin: 30px 0 0 21px;
+    height: 30px;
+    width: 30px;
+    background-image: url(/close.svg);
+    background-repeat: no-repeat;
+    background-size: 30px 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.menu_lateral {
+    background-color: rgba(67, 67, 67, 1);
+    min-width: 158px;
+    height: 100%;
+    border-end-end-radius: 30px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.nav_lateral {
+    margin-top: 100px;
+    height: 400px;
+    width: 85px;
+}
